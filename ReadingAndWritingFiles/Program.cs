@@ -14,7 +14,10 @@ namespace ReadingAndWritingFiles
 
             string test;
             test = System.IO.File.ReadAllText("test.txt");
-            Console.WriteLine(test);
+
+            string[] test2;
+            test2 = test.Split('\r');
+            Console.WriteLine(test2[0]);
 
             Console.ReadKey(true);
         }
