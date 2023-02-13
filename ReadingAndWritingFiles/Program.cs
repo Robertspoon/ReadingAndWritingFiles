@@ -12,6 +12,10 @@ namespace ReadingAndWritingFiles
         {
             Console.WriteLine("Reading and writing files");
 
+            string test;
+            test = System.IO.File.ReadAllText("test.txt");
+            Console.WriteLine(test);
+
             Console.ReadKey(true);
         }
     }
